@@ -55,6 +55,7 @@ nav img{
     background: #fdf403;
     display: block;
     margin: auto;
+    transition: 0.5s;
 }
 .nav-links ul :nth-child(3)::after{
     content: '';
@@ -64,7 +65,11 @@ nav img{
     display: block;
     margin: auto;
     transition: 0.5s;
-}.nav-links ul :nth-child(4)::after{ground: #0033ff;
+}.nav-links ul :nth-child(4)::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0033ff;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -94,9 +99,9 @@ text-align: center;
 }
 .text-box p{
 margin: 10px 0 40px;
-font-size: 14px;
+font-size: 20px;
 }
-.frs-btn{
+.hero-btn{
     display: inline-block;
     text-decoration:underline;
     color: #fff;
@@ -107,10 +112,10 @@ font-size: 14px;
     position: relative;
     cursor: pointer;
 }
-.frs-btn:hover{
+.hero-btn:hover{
     border: 1px solid green;
     background: rgba(255, 255, 0, 0.359);
-    transform:rotatey(3.142rad);
+    transform:rotate();
     transition: 5s;
 }
 @media(max-width: 700px){
@@ -134,7 +139,54 @@ font-size: 14px;
 
 .bio{
     width: 80% ;
-    margin: auto;
+    margin: 100PX;
     text-align: center;
     padding-top: 100px;
+}
+.bio h2{
+    font-size: 100px;
+}
+.bio p{
+    font-size: 25px;
+    display: flex;
+    padding: 6% 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-----skills-----*/
+
+.skills{
+    width: 80% ;
+    margin: 150PX;
+    text-align: center;
+    padding-top: 100px;
+}
+.skills h2{
+    font-size: 100px;
+}
+.skills p{
+    font-size: 25px;
+    display: flex;
+    padding: 6% 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-----education-----*/
+
+.education{
+    width: 80% ;
+    margin: 100PX;
+    text-align: center;
+    padding-top: 100px;
+}
+.education h2{
+    font-size: 100px;
+}
+.education p{
+    font-size: 25px;
+    display: flex;
+    padding: 6% 15%;
+    justify-content: space-between;
+    align-items: center;
 }
